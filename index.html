@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundVibe</title>
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+    <style>
+    body {
+      display: flex;
+      height: 100vh;
+      overflow-y: hidden;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+      .status-circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+        background-color: red;
+      }
+
+      .sound-box {
+        margin: 5px;
+        padding: 5px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sound-box">
+      <div class="status-circle"></div>
+      <input type="range" value="100" name="volume" id="thunder-volume" />
+      <button id="thunder">Гроза</button>
+    </div>
+    <div class="sound-box">
+      <div class="status-circle"></div>
+      <input type="range" value="100" name="volume" id="rain-volume" />
+      <button id="rain">Дождь</button>
+    </div>
+    <div class="sound-box">
+      <div class="status-circle"></div>
+      <input type="range" value="100" name="volume" id="cafe-volume" />
+      <button id="cafe">Кафе</button>
+    </div>
+    <div class="sound-box">
+      <div class="status-circle"></div>
+      <input type="range" value="100" name="volume" id="lofi-volume" />
+      <button id="lofi">Lo-Fi</button>
+    </div>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>

@@ -5,7 +5,7 @@ let cafeAudio = new Audio();
 let cafeVolume = document.querySelector("#cafe-volume");
 let cafeButton = document.querySelector("#cafe");
 
-cafeVolume.addEventListener("change", function () {
+cafeVolume.addEventListener("input", function () {
   cafeAudio.volume = cafeVolume.value / 100;
 });
 
@@ -28,7 +28,7 @@ let thunderAudio = new Audio();
 let thunderVolume = document.querySelector("#thunder-volume");
 let thunderButton = document.querySelector("#thunder");
 
-thunderVolume.addEventListener("change", function () {
+thunderVolume.addEventListener("input", function () {
   thunderAudio.volume = thunderVolume.value / 100;
 });
 
@@ -51,7 +51,7 @@ let rainAudio = new Audio();
 let rainVolume = document.querySelector("#rain-volume");
 let rainButton = document.querySelector("#rain");
 
-rainVolume.addEventListener("change", function () {
+rainVolume.addEventListener("input", function () {
   rainAudio.volume = rainVolume.value / 100;
 });
 
@@ -79,7 +79,7 @@ function randomMusic(array) {
   return `./music/${array[Math.floor(Math.random() * musicArray.length)]}`;
 }
 
-lofiVolume.addEventListener("change", function () {
+lofiVolume.addEventListener("input", function () {
   lofiAudio.volume = lofiVolume.value / 100;
 });
 
